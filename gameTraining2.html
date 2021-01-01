@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="css\gameTraining2.css" type="text/css" />
+    <script src="javascript\gametraining2.js"></script>
+</head>
+<body >
+    <div align="center">
+        <table >
+            <tr>
+			    <td> 
+				      <button id="home" onclick="Home()">HOME</button>
+				</td>
+                <td>
+                    <div class="left-line"></div>
+                    </td>
+                <td>
+                    <div id="time">
+                        <p>30</p>
+                    </div>
+                        </td>
+                <td>
+                    <div class="right-line"></div>
+
+                </td>
+                <td><div id="Score">
+					<p id=text> 0</p>
+				</div>
+				</td>
+            </tr>
+        </table>
+    </div>
+    <div align="center">
+        <div class="content">
+            <div align="center">
+                <div id="Answer">
+
+                </div>
+            </div>
+            <br /> <br /> <br />
+            <div align="center">
+                <table>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="number" type="button" value="TRUE" onclick="check(true)" />
+                            <input id="number" type="button" value="FALSE" onclick="check(false)" />
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <audio id="soundTrue">
+        <source src="betul.wav" type="audio/wav">
+    </audio>
+    <audio id="soundFalse">
+        <source src="salah.wav" type="audio/wav">
+    </audio>
+    <audio id="end">
+        <source src="succses.wav" type="audio/wav">
+    </audio>
+
+    <div id="contentFinish" >
+        <div class="overlay"></div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div id="konten">    
+            <p>Score</p>
+        </div>
+		<div class="butt">
+		<div class="home">
+			  <img  src="image/home.PNG" onclick="Home()">
+			</div>
+			<a href="GameTraining.html">
+            <div class="reload">
+			  <img  src="image/Reload.png" >
+			</div>
+			</a>
+			<div class="Submit">
+			    <input type="button" value="Submit"  onclick="valid('LogicDash')">
+		</div>		
+		</div>
+          <div id="valid"></div>
+    </div>
+	
+	<div id="Home"> </div>
+  </body>
+</html>

@@ -1,0 +1,371 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+    margin : 0px;
+    
+background: #E55D87; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #E55D87 , #5FC3E4); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #E55D87 , #5FC3E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          
+}
+
+span {
+    font-style: italic;
+    color :#ffb56f;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size : 50px;
+    
+}
+#Score #text {
+    float : right;
+    border : 3px solid #fff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size : 40px;
+    height : 50px; 
+    width : 100px;
+	display: block;
+	color: #fff;
+    background-color :#ffb56f;
+    padding: 15px 16px;
+    text-align :center;
+	text-decoration: none;
+}
+.left-line {
+ height : 5px;
+ width : 480px;
+ background-color:#e0f64f;
+}
+ #time {
+    height : 100px;
+ width : 100px;
+ border-radius : 50px;
+   background-color : #85e1ff;
+   color : #fff;
+    border :1px solid #85e1ff;
+  font-size : 30px;
+  text-align: center;
+  box-shadow : 0px 0px 5px 5px rgba(50,50,50,0.2);
+}
+ .right-line {     
+ height : 5px;
+ width : 480px;
+  background-color:#e0f64f;
+}
+     
+@keyframes bign{
+  0%{
+    height : 60px; 
+    width : 140px;
+	
+  }
+  100%{
+    height : 70px; 
+    width : 150px;
+	
+  }
+  
+} 
+
+
+@keyframes small{
+  0%{
+    height : 70px; 
+    width : 150px;
+	
+  }
+  100%{
+    height : 60px; 
+    width : 140px;
+	
+  }
+  
+} 
+    
+#home {
+    animation-name:bign; 
+	animation-duration:0.5s;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size : 20px;
+    height : 70px; 
+    width : 150px;
+	display: block;
+	color: #fff;
+    background-color :#ffb56f;
+	padding: 15px 16px;
+    text-align :center;
+	text-decoration: none;
+    border : 1px solid #ffb56f;
+}
+#home:hover{
+    height : 60px; 
+    width : 140px;
+    animation-name:small; 
+	animation-duration:0.5s;
+  background-color: #fff;
+  color:#555;
+  border : 1px solid #ffb56f;
+}
+ .Restart a {
+     float : right
+    }
+ 
+
+
+
+
+@keyframes op {
+    0% {
+        -moz-opacity: 0.1;
+        opacity: 0.1;         }
+
+    
+
+    100% {
+        -moz-opacity: 1;
+        opacity: 1;
+      
+        }
+}
+
+#Answer {
+     border-bottom : 1px solid #c9ff2c;
+     height : 80px;
+} 
+
+@keyframes opacity {
+    0% {
+        -moz-opacity: 0.1;
+        opacity: 0.1;
+        height: 10px;
+        width : 100px;
+        border-radius: 0px;
+    }
+
+    
+
+    100% {
+        -moz-opacity: 1;
+        opacity: 1;       
+    height:30px;
+    width :700px;
+    border-radius: 5px;
+    }
+}
+
+@keyframes big {
+    0% {
+        height: 10px;
+        width : 100px;
+        border-radius: 0px;
+    }
+    100% {
+    height:30px;
+    width :700px;
+    border-radius: 5px;
+     }
+}
+#number{ 
+    text-align:center;
+    animation-name : opacity;
+    animation-duration : 0.5s;
+    animation-delay : 0.1s;
+    background-color : #fff;
+    border :1px solid #4cff00;
+    font-size : 15px;
+    height:30px;
+    width :700px;
+    border-radius: 5px;
+}
+
+    #number:hover {
+	    cursor :pointer;
+        background-color:#c9ff2c;
+        border: 1px solid #4cff00;
+        color : #fff;    
+    }
+
+    @keyframes zoomIn {
+    0% {
+        opacity : 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+#contentFinish {
+     
+   visibility : hidden;  
+}
+
+.contentFinish {
+     animation-name : zoomIn;
+    animation-duration : 2s; 
+}
+#contentFinish .overlay{ 
+ height : 100%; 
+ width : 100%;
+ background-color : #fff;
+ position : absolute;
+ top :0px; 
+ left :0px;
+}
+#contentFinish .line1 {
+ height: 5px; 
+ width : 100%;
+ top : 50%;
+ background-color : #E55D87;
+ position: absolute;
+}
+#contentFinish .line2 {
+ height: 5px; 
+ width : 100%;
+ top : 55%;
+ position : absolute;
+ background-color : #226277;
+}
+
+#contentFinish #konten {
+ height  : 300px;
+ width  : 600px;
+ background-color: #fff;
+ position : absolute;
+ top :25%; 
+ left :25%;
+ border-radius : 4px;
+ box-shadow : 1px 0px 1px 1px rgba(50,50,50,0.2);
+}
+
+@keyframes bigButton{
+  0%{
+    height : 90px; 
+    width : 90px;
+	
+  }
+  100%{
+    height : 100px; 
+    width : 100px;
+	
+  }
+  
+} 
+
+
+@keyframes smallButton{
+  0%{
+    height : 100px; 
+    width : 100px;
+	
+  }
+  100%{
+    height : 90px; 
+    width : 90px;
+	
+  }
+ }
+
+.butt{
+margin : -130px 420px;
+} 
+
+ #contentFinish .home  img {
+animation-name:bigButton; 
+animation-duration:0.5s;
+  margin:-40px 20px; 
+  position :fixed;
+  height:100px; 
+  width : 100px;
+}
+#contentFinish  .home  img:hover{
+cursor:pointer;
+animation-name:smallButton; 
+	animation-duration:0.5s;
+    height : 90px; 
+    width : 90px;
+	
+}
+#contentFinish  .reload  img {
+animation-name:bigButton; 
+animation-duration:0.5s;
+  margin:-40px 150px; 
+  position :fixed;
+  height:100px; 
+  width : 100px;
+}
+#contentFinish  .reload  img:hover{
+cursor:pointer;
+animation-name:smallButton; 
+	animation-duration:0.5s;
+    height : 90px; 
+    width : 90px;
+	
+}
+#contentFinish  .Submit input {
+font-size:20px;
+border:1px solid #fff;
+animation-name:bigButton; 
+animation-duration:0.5s;
+  margin:-40px 280px; 
+  position :fixed;
+  height:100px; 
+  width : 100px;
+  border-radius:50px;
+  border:1px solid #c9ff2c;
+  background-color:#fff;
+  color:#55;
+}
+#contentFinish .Submit  input:hover{
+cursor:pointer;
+animation-name:smallButton; 
+	animation-duration:0.5s;
+    height : 90px; 
+    width : 90px;
+	
+}
+#contentFinish   h3{
+   padding : 5px 5px 5px 5px;
+   border:1px solid #c9ff2c;
+   border-radius:4px;
+  margin : 100px 500px;
+  position:absolute;
+  color:#555; 
+  box-shadow: 0px 0px 1px 1px rgba(50,50,50,0.2); 
+}
+
+
+#contentFinish #konten p {
+    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom : 5px solid #fffbab;
+    border-top : 5px solid #fffbab;
+    height : 80px;
+    width : 100%;
+    padding : 10px 0px 10px;
+  color :#fff;
+ font-size : 60px ;
+ text-align : center;
+ background-color : #abdefa;
+}
+
+@keyframes HomeAnim {
+    0% {
+        -moz-opacity: 0.1;
+        opacity: 0.1;
+        width : 0%;
+         background-color :#fff;
+    }
+    100% {
+        -moz-opacity: 1;
+        opacity: 1;
+        width : 100%;        
+        background-color :#bcde34;
+    }
+}
+
+.Homeanimn {
+  background-color :#bcde34;
+   animation-name: HomeAnim; 
+   animation-duration : 2s;
+   height : 100%;
+   width  : 100%;
+   position : fixed;
+   top: 0px;
+}

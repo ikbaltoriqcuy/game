@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="css\GameTraining.css" type="text/css" />
+    <script src="javascript\gametraining.js"></script>
+</head>
+<body>
+
+    <div align="center">
+        <table>
+            <tr>
+                <td>
+
+                    <button id="home" onclick="Home()">HOME</button>
+
+                </td>
+                <td>
+                    <div class="left-line"></div>
+                </td>
+                <td>
+                    <div id="time">
+                        <p>30</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="right-line"></div>
+
+                </td>
+                <td>
+                    <div id="Score">
+                        <p id=text> 0</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="Answer" align ="center">        
+        <span id="s1" >5 + </span> <span id="s2"> _ = </span> <span id="s3">7</span>
+    </div>
+    <br /> 
+    <div align="center">
+        <table>
+            <tr>
+                <td>
+                    <input id="number" type="button" value="1" onclick="check(1)" />
+                    <input id="number" type="button" value="2" onclick="check(2)" />
+                    <input id="number" type="button" value="3" onclick="check(3)"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="number" type="button" value="4" onclick="check(4)"/>
+                    <input id="number" type="button" value="5" onclick="check(5)"/>
+                    <input id="number" type="button" value="6" onclick="check(6)"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="number" type="button" value="7" onclick="check(7)"/>
+                    <input id="number" type="button" value="8" onclick="check(8)"/>
+                    <input id="number" type="button" value="9" onclick="check(9)"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;
+                    <input id="number" type="button" value="0"  onclick="check(0)"/>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+    <audio id="soundTrue">
+        <source src="betul.wav" type="audio/wav">
+    </audio>
+    <audio id="soundFalse">
+        <source src="salah.wav" type="audio/wav">
+    </audio>
+    <audio id="end">
+        <source src="succses.wav" type="audio/wav">
+    </audio>
+
+		
+    <div id="contentFinish">
+        <div class="overlay"></div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div id="konten">
+            <p>Score</p>
+        </div>
+		<div class="butt">
+		<div class="home">
+			  <img  src="image/home.PNG" onclick="Home()">
+			</div>
+			<a href="GameTraining.html">
+            <div class="reload">
+			  <img  src="image/Reload.png" >
+			</div>
+			</a>
+			<div class="Submit">
+			    <input type="button" value="Submit"  onclick="valid('MathDash')">
+		</div>		
+		</div>
+          <div id="valid"></div>
+    </div>
+
+    <div id="Home"> 
+	
+	</div>
+    <div id="content"></div>
+</body>
+</html>

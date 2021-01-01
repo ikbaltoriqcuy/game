@@ -1,0 +1,143 @@
+﻿body {
+  font-family : 'Bodoni MT';
+  margin : 0px;
+}
+
+span {
+    font-style: italic;
+}
+
+@keyframes rotate {
+    0% {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    25%{
+        -moz-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+        -o-transform: rotate(-15deg);
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+    50%{
+        -moz-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        -o-transform: rotate(15deg);
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+
+    100% {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+
+p a {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size : 20px;
+    height : 25px; 
+    width : 100px;
+	display: block;
+	color: #fff;
+    background-color :#ffb56f;
+	padding: 15px 16px;
+    text-align :center;
+	text-decoration: none;
+    border : 1px solid #ffb56f;
+}
+
+    p a:hover {
+        height : 25px; 
+    width : 120px;
+	
+    }
+
+ .Restart a {
+     float : right
+    }
+ 
+ .Home a {
+     float : left
+    }
+ 
+#Answer {
+     border-bottom : 1px solid #c9ff2c;
+     height : 80px;
+} 
+
+@keyframes op {
+    0% {
+        -moz-opacity: 0.1;
+        opacity: 0.1;         }
+
+    
+
+    100% {
+        -moz-opacity: 1;
+        opacity: 1;
+      
+        }
+}
+
+
+ p {
+    animation-name : op;
+    animation-duration : 1.5s;
+    font-size : 50px;
+    color : #ff6a00;
+    font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+@keyframes opa {
+    0% {
+        -moz-opacity: 0.1;
+        opacity: 0.1;         
+           margin : 0px 0px;
+    }
+
+    
+
+    100% {
+        -moz-opacity: 1;
+        opacity: 1;
+             
+        }
+}
+
+
+#Mention {
+    animation-name : opa;
+    animation-duration : 2s;
+    padding : 10px 10px 10px 10px;
+    width : 500px;
+    border-left : 4px solid #b6ff00;
+    background-color : #fff;
+
+}
+
+input {
+    animation-name : rotate;
+    animation-duration : 2s;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size : 20px;
+	color: #fff;
+    background-color :#ffb56f;
+    text-align :center;
+    border : 1px solid #ffb56f;
+    margin : 5px;
+}
+
+    input:hover {
+    color: #fff;
+    background-color :#ff5934;
+    
+    }
