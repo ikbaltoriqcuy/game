@@ -19,7 +19,7 @@ function Home() {
     
 }
 function index(){
-  window.location.assign("index.php")
+  window.location.assign("index.html")
 }
 function valid(a){
    if(n!=1){

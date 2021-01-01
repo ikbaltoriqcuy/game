@@ -17,7 +17,7 @@ function Home() {
     window.setTimeout(index, 2000);   
 }
 function index(){
-  window.location.assign("index.php")
+  window.location.assign("index.html")
 }
 function valid(h){
    if(n!=1){
